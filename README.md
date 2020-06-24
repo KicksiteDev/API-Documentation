@@ -243,7 +243,7 @@ Response Example: [201]
 
 Curl:
 ```
-curl --location --request POST 'http://api.kicksite.net/v1/schools/119/bizbuilder/forms/<access_token>/submissions' \
+curl --location --request POST 'http://api.kicksite.net/v1/schools/1/bizbuilder/forms/<access_token>/submissions' \
 --header 'Authorization: Bearer <access_token>' \
 --header 'Content-Type: application/json' \
 --data-raw '{

@@ -138,7 +138,8 @@ Response Example:
 
 Curl:
 ```
-curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzs1UiJ9.eyJleHAiOjE1OTMxMTQ5OTgsInN1YiI6MTR0MTY5fQ.9ewoBuPRRvdNMkJ_DFSQtLofnx11ezEoD3kTt2-MI7Q&context%5Btype%5D=School&context%5Bid%5D=1' 'https://auth.kicksite.net/v1/users/sessions'```
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzs1UiJ9.eyJleHAiOjE1OTMxMTQ5OTgsInN1YiI6MTR0MTY5fQ.9ewoBuPRRvdNMkJ_DFSQtLofnx11ezEoD3kTt2-MI7Q&context%5Btype%5D=School&context%5Bid%5D=1' 'https://auth.kicksite.net/v1/users/sessions'
+```
 
 Ruby:
 https://github.com/KicksiteDev/kicksite_auth_client

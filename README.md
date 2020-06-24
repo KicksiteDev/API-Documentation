@@ -155,6 +155,13 @@ https://api.kicksite.net/
 ### Get Lead Capture Form Information
 `GET  https://api.kicksite.net/v1/schools/1/bizbuilder/forms/<access_token>`
 
+!!!
+> "access_token" is per Lead Capture Form and can be found via the public url
+
+{protocol}://{subdomain}.{domain}/bizbuilders/lead_capture_forms/`eyJhdGciOiJIUzI1NiJ9.eyJkYXRhIjoibGNmXzIxNyYifQ.vkBJKS5zYHNnC3n4QZp5yuAWJTk28CeXIEfaUl9nPWg`
+
+!!!
+
 Response Example: [200]
 ```
 {
@@ -227,6 +234,14 @@ Kicksite::Schools::Bizbuilder::Form.find('<access_token>', params: { school_id: 
   }
 }
 ```
+
+!!!
+> "access_token" is per Lead Capture Form and can be found via the public url
+
+{protocol}://{subdomain}.{domain}/bizbuilders/lead_capture_forms/`eyJhdGciOiJIUzI1NiJ9.eyJkYXRhIjoibGNmXzIxNyYifQ.vkBJKS5zYHNnC3n4QZp5yuAWJTk28CeXIEfaUl9nPWg`
+
+!!!
+
 Response Example: [201]
 ```
 {

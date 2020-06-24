@@ -1,5 +1,10 @@
 # API-Documentation
 
+##### Table of Contents  
+[Authentication](#authentication)   
+[Data Retrieval/Modification](#data-retrievalmodification)   
+[System Event Retrieval/Registration](#system-event-retrievalregistration)   
+
 ## Authentication
 https://auth.kicksite.net/
 

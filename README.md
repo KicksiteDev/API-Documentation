@@ -216,7 +216,7 @@ KicksiteSvcBearerAuth.connection.bearer_token = '<access_token>'
 Kicksite::Schools::Bizbuilder::Form.find('<access_token>', params: { school_id: 1 })
 ```
 
-#### Submit Lead Capture Form Information
+### Submit Lead Capture Form Information
 `POST  http://api.kicksite.net/v1/schools/1/bizbuilder/forms/<access_token>/submissions`
 ```
 {

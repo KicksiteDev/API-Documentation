@@ -283,3 +283,47 @@ form.submit({
   name: "Firstname Lastname"
 })
 ```
+
+## System Event Retrieval/Registration
+https://system-events.kicksite.net/
+
+### Get system events within given context
+`GET  https://system-events.kicksite.net/v1/system_events?page=1&per_page=10&context[type]=School&context[id]=1&sort[by]=created_at&sort[asc]=false`
+Response Example:
+```
+[
+  {
+    "id": 1,
+    "context": {
+      "type": "School",
+      "id": 1
+    },
+    "type": "user_session",
+    "action": "create",
+    "metadata": {
+      "user_person_id": 1
+    },
+    "created_at": "2020-06-24T20:46:43.973Z"
+  },
+  
+  ...
+]
+```
+
+Curl:
+```
+curl -X GET --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'Authorization: <auth_token>' 'https://system-events.kicksite.net/v1/system_events?page=1&per_page=10&context[type]=School&context[id]=1&sort[by]=created_at&sort[asc]=false'
+```
+
+Ruby:
+https://github.com/KicksiteDev/system_events_client
+```
+SystemEventsApiBearerAuth.connection.bearer_token = '<auth_token>'
+
+SystemEvent.all(params: {
+                  context: {
+                    type: 'School',
+                    id: 1
+                  }
+                })
+```
